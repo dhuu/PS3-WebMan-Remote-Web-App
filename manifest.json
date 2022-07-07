@@ -1,5 +1,5 @@
 {
-  "short_name": "RPWA",
+
   "name": "PS3 WebRemote PWA",
   "icons": [
    {
@@ -13,6 +13,7 @@
 	"sizes": "512x512"
 	}
     ],
+  "short_name": "RPWA",
   "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#000000",
