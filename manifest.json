@@ -1,10 +1,21 @@
 {
   "name": "PS3 WebRemote PWA",
+  "icons": [
+      {
+        "src": "/images/icons-192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/icons-512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
   "short_name": "RemotePWA",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
-  "background_color": "#fdfdfd",
-  "theme_color": "#db4938",
-  "orientation": "portrait-primary",
+  "background_color": "#000000",
+  "theme_color": "#ff0000"
 }
  
