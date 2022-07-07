@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="manifest" href="manifest.json" />
+
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<script language="javascript" type="text/javascript">
+
+function stampa()
+            {
+                var link = document.getElementById('utente').value;
+				up = link+ "/pad.ps3?up"; 
+				dwn = link+ "/pad.ps3?down"; 
+				lft = link+ "/pad.ps3?left"; 
+				rgt = link+ "/pad.ps3?right"; 
+				ook = link+ "/pad.ps3?cross"; 
+				bck = link+ "/pad.ps3?circle";
+				psn = link+ "/pad.ps3?psbtn";
+                return false;
+            }
+function pup(buttonpress)
+{
+	
+	switch(buttonpress) {
+	case 0:
+	window.open("http://"+up, "frame");
+	break;
+	case 1:
+    window.open("http://"+dwn, "frame");
+    break;
+	case 2:
+	window.open("http://"+lft, "frame");
+    break;
+	case 3:
+    window.open("http://"+rgt, "frame");
+	break;
+	case 4:
+	window.open("http://"+ook, "frame");
+    break;
+	case 5:
+	window.open("http://"+bck, "frame");
+	break;
+	case 6:
+	window.open("http://"+psn, "frame");
+	break;
+	default:
+    break;
+}
+}	
+ 
+ 
+</script>			
+<style>
+.button {
+  background-color: #303030;
+  border: 5px solid #202020	;
+  color: white;
+  padding: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 24px;
+  margin: 5px 2px;
+  cursor: pointer;
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
+.scaled {
+  transform: scale(1.5); 
+}
+
+.scroll {
+   overflow: hidden;
+}
+
+html, body {
+   height: 99%;
+
+  overflow-x: hidden;
+}
+body {
+  position: relative;
+}
+
+.hover:hover {
+  background-color: #404040	;
+  color: white;
+}
+.button5 {border-radius: 25%;}
+
+input,
+textarea,
+button,
+select,
+a {
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+trans {
+
+  
+	visibility: hidden;
+}
+
+
+
+</style>
+</head>
+<center>
+<body class="scroll">
+
+
+
+<h2><br><br><br><br></h2>
+<div class="content">
+<div class="scaled">
+<input type="text" id="utente">
+<input type="submit" value="PS3 IP" onclick="return stampa();" /> <br>
+<button class="trans"   >	    </button>
+<button class="button button5 hover" id="upp" onclick="javascript:pup(0)">&uarr;	</button>
+<button class="trans"  >	</button>
+
+<br>
+<button class="button button5 hover" id="leftt" onclick="javascript:pup(2)">&larr;	</button>
+<button class="button button5 hover" id="okk" onclick="javascript:pup(4)">OK</button>
+
+<button class="button button5 hover" id="rightt" onclick="javascript:pup(3)">&rarr;	</button>
+<br>
+<button class="button button5 hover" onclick="javascript:pup(6)">&#9678;</button>
+<button class="button button5 hover" id="downn" onclick="javascript:pup(1)">&darr;	</button>
+<button class=" button button5 hover" id="backk" onclick="javascript:pup(5)">&#8617;</button>
+	</button> <br><br>
+<iframe name="frame" width="250" height="100"></iframe>
+
+</div>
+</div>
+</body>
+</center>
+
+</html>
