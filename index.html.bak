@@ -6,10 +6,23 @@
 <title>PS3 WebRemote</title>
 <meta name="theme-color" content="#ff0000"/>
 <script>
-    //if browser support service worker
-    if('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./sw.js');
-    };
+  
+	
+	window.addEventListener("load", (e) => {
+    registerSW();
+  });
+
+  async function registerSW() {
+    if ("serviceWorker" in navigator) {
+      try {
+        await navigator.serviceWorker.register("./sw.js");
+      } catch (e) {
+        alert("ServiceWorker registration failed. Sorry about that.");
+      }
+    } else {
+      document.querySelector(".alert").removeAttribute("hidden");
+    }
+  }
     </script>
 <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
 <script language="javascript" type="text/javascript">
