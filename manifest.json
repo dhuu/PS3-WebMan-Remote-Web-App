@@ -14,7 +14,7 @@
 	}
     ],
   "short_name": "RPWA",
-  "start_url": "/index.html",
+  "start_url": "https://github.com/smsry/PS3-WebMan-Remote-Web-App/blob/master/index.html",
   "display": "standalone",
   "background_color": "#000000",
   "theme_color": "#ff0000"
