@@ -1,7 +1,7 @@
 {
   "name": "PS3 WebRemote PWA",
   "short_name": "RemotePWA",
-  "start_url": "Remote.html",
+  "start_url": "/Remote.html",
   "display": "standalone",
   "background_color": "#fdfdfd",
   "theme_color": "#db4938",
